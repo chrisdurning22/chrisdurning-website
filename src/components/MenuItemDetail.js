@@ -8,7 +8,6 @@ const MenuItemDetail = ({ topic }) => {
 			<p>{topic.content}</p>
 		</div>
 	);
-	
 }
 
 const mapStateToProps = (state) => {

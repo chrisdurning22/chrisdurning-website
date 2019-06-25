@@ -24,7 +24,6 @@ class TopicMenu extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-	// console.log(state);
 	return {
 		topics: state.information,
 		selectedIndex: state.selectedIndex
