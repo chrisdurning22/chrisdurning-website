@@ -15,7 +15,7 @@ const App = () => {
 
 			<div className="twelve wide stretched column">
 				<div>
-					<img src={profile} alt="my profile picture" className="ui centered small circular image"/>
+					<img src={profile} alt="my profiler" className="ui centered small circular image"/>
 				</div>
 	    		<div style={{textAlign: `center`}} className="ui segment">
 					<MenuItemDetail/>
