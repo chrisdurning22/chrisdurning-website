@@ -4,8 +4,8 @@ import { selectTopic } from '../actions';
 
 const MenuItemDetail = ({ topic }) => {
 	return (
-		<div>
-			<p>{topic.content}</p>
+    <div>
+    <p>{topic.content}</p>
 		</div>
 	);
 }
@@ -17,4 +17,3 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps, { selectTopic })(MenuItemDetail);
-

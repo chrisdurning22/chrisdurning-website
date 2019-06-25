@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 
-const aboutMe = 
-	{title: 
-		'About Me', 
+const aboutMe =
+	{title:
+		'About Me',
 	content:
 		'My name is Chris Durning, and I’m a recent graduate of Dublin City University where I received a BSc degree in Computer Applications and Software Engineering.\
 		For the past year I have been inactive in searching for full-time employment due to the illness of a family member which has required me to stay at home for caring purposes. Now things have changed and I’m looking to move into a full time job using my degree. \
@@ -14,7 +14,7 @@ const informationReducer = () => {
 	return [
 		aboutMe,
 		{title:
-			'Education', 
+			'Education',
 		content:
 			'BSc Computer Applications and Software Engineering | 2014 - 2018 | Dublin City University \
 			Upper Second Class Honors (2.1) \
@@ -32,7 +32,7 @@ const informationReducer = () => {
 			Shop Assistant | Centra | September 2018 - present \
 			This job requires you to be inquisitive, helpful and respectful towards other people. While this job is not in my area of study, the interpersonal skills used here are useful in every workplace.'},
 		{title:
-			'Projects', 
+			'Projects',
 		content:
 			'Neural Jump (My Final Year Project) \
 			I constructed a neuro-evolution algorithm which combines neural networks and genetic theory to solve problems using reinforcement learning. Neuro-evolution starts with a population of 150 neural networks. Each neural network begins with a very simple topology (2 input nodes and one output node). The neural networks are tested on the given problem to see how well they perform. The highest performing neural networks are kept and carried into the next generation with the lowest performing getting totally removed from the population. To help the neural networks evolve into a potential high performer, certain techniques are applied. The techniques: tracking genes with historic markers to allow crossover of genes with a similar topology, applying speciation to neural networks to try and preserve new innovations and mutation - also known as complexification. Complexification involves changing the neural network weights by adding new nodes, adding new connections between previously unconnected nodes and perturbing the weights (multiplying the weights of a network by a small random number). \
@@ -53,10 +53,10 @@ const informationReducer = () => {
 			This application aims to help leaving cert students - help each other - the same way coders help each other on Stack Overflow. \
 			Users have the ability to post answers to leaving cert questions, observe answers posted by other users and to either upvote or downvote an answers giving their opinion on the correctness of the answer. The idea being that good answers will have a large number of upvotes and students can use them in preparation for their exams. \
 			This app was developed for android mobile devices and uses LAMP to handle everything on the server side. \
-			Credit: Co-developed by Cathal Conroy'}, 
-		{title: 
-			'Interests', 
-		content: 
+			Credit: Co-developed by Cathal Conroy'},
+		{title:
+			'Interests',
+		content:
 			'Machine learning is an area of computer science that I’m fascinated by. \
 			I’ve looked at reinforcement learning in the past - by working with neural networks that learn through a reward system. Understanding how complicated systems work appeals to me. Machine Learning is an area of computer science that has not been explored to the same extent as other areas. Knowledge in this area separates you from the herd, and as time goes on that knowledge will increase in value - as AI becomes more prominent and its applications increase. \
 			I have an interest in building web applications. Previously I’ve contributed to and created a few different web applications using technologies like React, Redux, nodejs and many others.'},
@@ -85,7 +85,7 @@ const selectIndexReducer = (selectedIndex = 0, action) => {
 }
 
 export default combineReducers({
-	information: informationReducer, 
+	information: informationReducer,
 	selectedTopic: selectedTopicReducer,
 	selectedIndex: selectIndexReducer
 });

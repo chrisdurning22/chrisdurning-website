@@ -8,7 +8,7 @@ class TopicMenu extends React.Component {
 		return this.props.topics.map((topic, index) => {
 			const className = this.props.selectedIndex === index ? 'active item' : 'item';
 			return (
-				<div 
+				<div
 					className={className}
 					onClick={() => {this.props.selectIndex(index);this.props.selectTopic(topic);}}
 					>
