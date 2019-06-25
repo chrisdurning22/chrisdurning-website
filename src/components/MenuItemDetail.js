@@ -3,17 +3,17 @@ import { connect } from 'react-redux';
 import { selectTopic } from '../actions';
 
 const MenuItemDetail = ({ topic }) => {
-	return (
+  return (
     <div>
-    <p>{topic.content}</p>
-		</div>
-	);
+      <p>{topic.content}</p>
+    </div>
+  );
 }
 
 const mapStateToProps = (state) => {
-	return {
-		topic: state.selectedTopic
-	};
+  return {
+    topic: state.selectedTopic
+  };
 };
 
 export default connect(mapStateToProps, { selectTopic })(MenuItemDetail);
